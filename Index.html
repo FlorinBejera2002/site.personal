@@ -1,79 +1,158 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
-    <title>My first page as a programmer</title>
-    <style>
-        h1 {
-            color: coral;
-        }
-         ul {
-            margin: 0;
-            padding: 0;
-            list-style-type: none;
-        }
-        li {
-            display: inline-block;
-            margin-right: 20px;
-            font-size: 30px;
-        }
-        div {
-            font-style: italic;
-            color: rgb(98, 223, 154);
-            font-size: 22px;
-        }
-        header {
-            background-color: rgb(138, 162, 179);
-            padding: 5px;
-        }
-        
-        body {
-            background-image: url('img.jpeg');
-         }
+<title>Principal Page</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
 
-        img {
-            float: right;
-            width: 600px;
-            height: 450px;
-            margin-top: 60px;
-        }
-    </style>
+/* Style the body */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+/* Header/logo Title */
+.header {
+  padding: 80px;
+  text-align: center;
+  background: #b9dbf1;
+  color: rgb(77, 83, 51);
+}
+
+/* Increase the font size of the heading */
+.header h1 {
+  font-size: 40px;
+}
+
+/* Style the top navigation bar */
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+}
+
+/* Style the navigation bar links */
+.navbar a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+}
+
+/* Right-aligned link */
+.navbar a.right {
+  float: right;
+}
+
+/* Change color on hover */
+.navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Column container */
+.row {  
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+}
+
+/* Create two unequal columns that sits next to each other */
+/* Sidebar/left column */
+.side {
+  -ms-flex: 30%; /* IE10 */
+  flex: 30%;
+  background-color: #f1f1f1;
+  padding: 20px;
+}
+
+/* Main column */
+.main {   
+  -ms-flex: 70%; /* IE10 */
+  flex: 70%;
+  background-co8
+}
+
+/* Fake image, just for this example */
+.fakeimg {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+}
+
+/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 700px) {
+  .row {   
+    flex-direction: column;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .navbar a {
+    float: none;
+    width: 100%;
+  }
+}
+</style>
 </head>
-
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="home.html">Home</a></li>
-                <li><a href="Images.html">Images</a></li>
-                <li><a href="Contact.html">Contact</a></li>
-                <li><a href="home.html"> Principal page</a></li>
-            </ul>
-        </nav>
-    </header>
-    <h1>Programator: Bejera Florin</h1>
-    <a href="https://github.com/account_verifications">
-    </a>
-    <div>
-        <p> Salut! </p>
-        <p>Numele meu este Florin, am 20 de ani, locuiesc in Timisoara
-            <br>iar de putin timp lucrez ca si programator, jobul pe care
-            <br>l-am avut inainete a fost in domneniul constructi, am lucrat
-            <br> timp de 3 ani in acest domeniu, dupa care am ales domeniul
-            <br>IT, m-ai exact, in Programare Web, ce ma determinat sa
-            <br>aleg asta, in primul rand au fost beneficile, iar dupa, felul
-            <br>in care poti sa programezi o pagina.
-            <br>In continuare vreu sa va spun cum am reusit sa invat programare.
-            <br>Am invatat cu ajutorul lui Vlad, Vlad este un prieten bun
-            <br>cu care joc fotbal in fiecare saptamana, el imi arata ce sa invat
-            <br>si cum sa invat, iar pe langa asta imi dadea si un timp in care
-            <br> trebuia sa termin ce imi dadea de invatat.
-            <br> Cursurile cu care am inceput au fost de pe <a
-                href=" https://app.pluralsight.com/library/.">PluralSight</a>
-            <br> si chiar recomand, deoarece iti explica mai in detaliat tot,
-            <br> ceea ce te ajuta sa intelegi mai usor. 
-         </p>
-    </div>
-</body>
 
+<div class="header">
+  <h1>My Website</h1>
+  <p>A website created by me.</p>
+</div>
+
+<div class="navbar">
+  <a href="home.html">Home</a>
+  <a href="Images.html">Images</a>
+  <a href="Contact.html">Contact</a>
+  <a href="tehnologi.html" class="right">Tehnologi</a>
+</div>
+
+<div class="row">
+  <div class="side">
+    <h2>About Me</h2>
+    <h5>Photo of me:</h5>
+    <img src="imageContact.jpeg" alt="Photo of me" style="width:100%">
+    <p>Hello, my name is Florin, I am 20 years old and I am from Romania.</p>
+    <h3>More Text</h3>
+    <p>Lorem ipsum dolor sit ame.</p>
+    <img src="imageContact.jpeg" alt="Photo of me" style="width:100%">
+    <div class="fakeimg" style="height:60px;">Image</div><br>
+    <div class="fakeimg" style="height:60px;">Image</div>
+  </div>
+  <div class="main">
+    <h2>TITLE HEADING</h2>
+    <h5>Title description, Dec 7, 2017</h5>
+    <div class="fakeimg" style="height:200px;">Image</div>
+    <p>Some text..</p>
+    <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+    <br>
+    <h2>TITLE HEADING</h2>
+    <h5>Title description, Sep 2, 2017</h5>
+    <div class="fakeimg" style="height:200px;">Image</div>
+    <p>Some text..</p>
+    <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+  </div>
+</div>
+
+<div class="footer">
+  <h2>Footer</h2>
+</div>
+
+</body>
 </html>
