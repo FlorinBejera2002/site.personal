@@ -1,194 +1,164 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<title>Principal Page</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-* {
-  box-sizing: border-box;
-}
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <title>Principal Page</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    * {
+      box-sizing: border-box;
+    }
 
-/* Style the body */
-body {
-  font-family: Arial, Helvetica, sans-serif;
-  margin: 0;
-}
+    /* Style the body */
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      margin: 0;
+    }
 
-/* Header/logo Title */
-.header {
-  padding: 80px;
-  text-align: center;
-  background: #b9dbf1;
-  color:#333;
-}
+    /* Header/logo Title */
+    .header {
+      padding: 80px;
+      text-align: center;
+      background: #b9dbf1;
+      color: #333;
+    }
 
-/* Increase the font size of the heading */
-.header h1 {
-  font-size: 40px;
-}
+    /* Increase the font size of the heading */
+    .header h1 {
+      font-size: 40px;
+    }
 
-/* Style the top navigation bar */
-.navbar {
-  overflow: hidden;
-  background-color: #333;
-}
 
-/* Style the navigation bar links */
-.navbar a {
-  float: left;
-  display: block;
-  color:#e4dede;
-  text-align: center;
-  padding: 14px 20px;
-  text-decoration: none;
-}
+    .navbar {
+      overflow: hidden;
+      background-color: #333;
+    }
 
-/* Right-aligned link */
-.navbar a.right {
-  float: right;
-}
+    .navbar a {
+      float: left;
+      display: block;
+      color: white;
+      text-align: center;
+      padding: 14px 20px;
+      text-decoration: none;
+    }
 
-/* Change color on hover */
-.navbar a:hover {
-  background-color: #ddd;
-  color: black;
-}
+    .navbar a.right {
+      float: right;
+    }
 
-/* Column container */
-.row {  
-  display: -ms-flexbox; /* IE10 */
-  display: flex;
-  -ms-flex-wrap: wrap; /* IE10 */
-  flex-wrap: wrap;
-}
 
-/* Create two unequal columns that sits next to each other */
-/* Sidebar/left column */
-.side {
-  -ms-flex: 30%; /* IE10 */
-  flex: 30%;
-  background-color: #e4dede;
-  padding: 20px;
-  color: #333;
-}
+    .navbar a:hover {
+      background-color: #ddd;
+      color: black;
+    }
 
-/* Main column */
-.main {   
-  -ms-flex: 70%; /* IE10 */
-  flex: 70%;
-  background-co8
-}
 
-/* Fake image, just for this example */
-.fakeimg {
-  background-color: #aaa;
-  width: 100%;
-  padding: 20px;
-}
-/* Footer */
-.footer {
-  padding: 20px;
-  text-align: center;
-  background: #333;
-}
+    /* Style the navigation bar links */
 
-/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 700px) {
-  .row {   
-    flex-direction: column;
-  }
-}
 
-/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
-@media screen and (max-width: 400px) {
-  .navbar a {
-    float: none;
-    width: 100%;
-  }
-}
-table {
-  font-family: arial, sans-serif;
-  border-collapse: collapse;
-  width: 100%;
-}
+    /* Column container */
+    .row {
+      display: -ms-flexbox;
+      /* IE10 */
+      display: flex;
+      -ms-flex-wrap: wrap;
+      /* IE10 */
+      flex-wrap: wrap;
+    }
 
-td, th {
-  border: 1px solid #c6daf1;
-  text-align: left;
-  padding: 8px;
-}
+    /* Create two unequal columns that sits next to each other */
+    /* Sidebar/left column */
+    .side {
+      -ms-flex: 30%;
+      /* IE10 */
+      flex: 30%;
+      background-color: #e4dede;
+      padding: 20px;
+      color: #333;
+    }
 
-tr:nth-child(even) {
-  background-color: #b7daf1;
-}
-</style>
+
+    /* Footer */
+    .footer {
+      padding: 20px;
+      text-align: center;
+      background: #333;
+    }
+
+    /* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+    @media screen and (max-width: 700px) {
+      .row {
+        flex-direction: column;
+      }
+    }
+
+    /* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+    @media screen and (max-width: 400px) {
+      .navbar a {
+        float: none;
+        width: 100%;
+      }
+    }
+
+    table {
+      font-family: arial, sans-serif;
+      border-collapse: collapse;
+      width: 100%;
+    }
+  </style>
 </head>
+
 <body>
 
-<div class="header">
-  <h1>My Website</h1>
-  <p>A website created by me.</p>
-</div>
-
-<div class="navbar">
-  <a href="home.html">Home</a>
-  <a href="Images.html">Images</a>
-  <a href="Contact.html">Contact</a>
-  <a href="tehnologi.html" class="right">Tehnologi</a>
-</div>
-<div class="row">
-  <div class="side">
-    <h2>About Me</h2>
-    <h5>Photo of me:</h5>
-    <img src="image010.jpeg" alt="Photo of me" style="width:100%">
-    <p>Hello, my name is Florin, I am 20 years old and I am from Romania.</p>
-    <h2>Tabel whit my level</h2>
-    <table>
-      <tr>
-        <th>Limbaj</th>
-        <th>nivelul_experienta</th>
-      </tr>
-      <tr>
-        <td>HTML</td>
-        <td>începător</td>
-      </tr>
-      <tr>
-        <td>CSS</td>
-        <td>începător</td>
-      </tr>
-      <tr>
-        <td>JS</td>
-        <td>începător</td>
-      </tr>
-      <tr>
-        <td>GIT</td>
-        <td>începător</td>
-      </tr>
-      <tr>
-        <td>BASH</td>
-        <td>începător</td>
-      </tr>
-    </table>
+  <div class="header">
+    <h1>My Website</h1>
+    <p>A website created by me.</p>
   </div>
-  <div class="main">
-    <h2>Tabel with my level</h2>
-    <h5>Title description, Dec 7, 2017</h5>
-    <div class="fakeimg" style="height:200px;">Image</div>
-    <p>Some text..</p>
-    <p></p>
-    <br>
-    <h2>TITLE HEADING</h2>
-    <h5>Title description, Sep 2, 2017</h5>
-    <div class="fakeimg" style="height:200px;">Image</div>
-    <p>Some text..</p>
-    <p></p>
-  </div>
-</div>
 
-<div class="footer">
-  <h2>Footer</h2>
-</div>
+  <div class="navbar">
+    <a href="Images.html">Images</a>
+    <a href="Contact.html">Contact</a>
+    <a href="tehnologi.html" class="right">Tehnologi</a>
+  </div>
+  <div class="row">
+    <div class="side">
+      <h2>About Me</h2>
+      <h5>Photo of me:</h5>
+      <img src="images/image010.jpeg" alt="Photo of me" style="width:100%">
+      <p>Hello!</p>
+      <p>My name is Florin</p>
+      <P>I have 20 years old</P>
+      <p> I am from Romania</p>
+      <p>My studies are average</p>
+      <p>My mentor is <a href="https://github.com/vladcrishan">Vlad Crisan</a></p>
+      <p>I want to reach the Full Stack level</p>
+      <p>I learned from the programming course taught by <a href="https://goit.global/ro/">GoIT </a></p>
+    </div>
+    <div class=" main">
+      <h2 style="text-align:center">What i like to do in my free time</h2>
+      <img src="images/myprogram.jpeg" alt="The picture that represents me" style="width:100%">
+      <p> I really like playing football, coding, reading, and occasionally taking pictures.</p>
+      <br>
+      <h2>My pictures</h2>
+      <h5>Itlay, August, 2022</h5>
+      <div class="picture">
+        <a href="images/Italypicture1.jpg"><img src="images/Italypicture1.jpg"></a>
+        <a href="images/Italypicture2.jpg"><img src="images/Italypicture2.jpg"></a>
+        <a href="images/Italypicture3.jpg"><img src="images/Italypicture3.jpg"></a>
+        <a href="images/Italypicture4.jpg"><img src="images/Italypicture4.jpg"></a>
+        <a href="images/Italypicture5.jpg"><img src="images/Italypicture5.jpg"></a>
+        <a href="images/Italypicture6.jpg"><img src="images/Italypicture6.jpg"></a>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer">
+    <h2>This site was created by</h2>
+  </div>
 
 </body>
+
 </html>
