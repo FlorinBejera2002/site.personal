@@ -193,3 +193,15 @@ td {
     align-items: center;
     margin-left: 600px;
 }
+
+.tehnologi {
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+    border: 5px solid rgb(0, 0, 0);
+}
+
+.title-tehnologi {
+    color: #333;
+    text-align: center;
+}
