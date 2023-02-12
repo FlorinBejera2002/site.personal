@@ -40,10 +40,6 @@ body {
     color: black;
 }
 
-.gallery {
-    margin: 10px 150px;
-}
-
 .gallery img {
     transition: 1s;
     padding: 37px;
