@@ -10,3 +10,9 @@
     filter: grayscale(100%);
     transform: scale(1.1);
 }
+.header {
+    padding: 80px;
+    text-align: center;
+    background: #b9dbf1;
+    color:#333;
+  }
